@@ -17,5 +17,13 @@ final class solutionTests_1: XCTestCase {
 //    XCTAssertEqual(s.myAtoi("words and 987"), 0)
     XCTAssertEqual(s.myAtoi("  +  413"), 0)
   }
+  
+  func testS_10() {
+    let s = s_10()
+    
+    XCTAssertEqual(s.isMatch("aa", "a"), false)
+    XCTAssertEqual(s.isMatch("aa", "a*"), true)
+    XCTAssertEqual(s.isMatch("ab", ".*"), true)
+  }
 
 }
