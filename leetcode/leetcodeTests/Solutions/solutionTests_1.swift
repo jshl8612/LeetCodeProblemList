@@ -33,5 +33,11 @@ final class solutionTests_1: XCTestCase {
     XCTAssertEqual(s.intToRoman(58), "LVIII")
     XCTAssertEqual(s.intToRoman(1994), "MCMXCIV")
   }
+  
+  func testS_15() {
+    let s = s_15()
+    
+    XCTAssertEqual(s.threeSum([-1,0,1,2,-1,-4]), [[-1,-1,2],[-1,0,1]])
+  }
 
 }
