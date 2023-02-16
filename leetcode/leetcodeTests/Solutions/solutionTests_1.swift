@@ -25,5 +25,13 @@ final class solutionTests_1: XCTestCase {
     XCTAssertEqual(s.isMatch("aa", "a*"), true)
     XCTAssertEqual(s.isMatch("ab", ".*"), true)
   }
+  
+  func testS_12() {
+    let s = s_12()
+    
+    XCTAssertEqual(s.intToRoman(3), "III")
+    XCTAssertEqual(s.intToRoman(58), "LVIII")
+    XCTAssertEqual(s.intToRoman(1994), "MCMXCIV")
+  }
 
 }
