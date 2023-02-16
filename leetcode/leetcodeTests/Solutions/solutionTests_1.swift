@@ -40,4 +40,9 @@ final class solutionTests_1: XCTestCase {
     XCTAssertEqual(s.threeSum([-1,0,1,2,-1,-4]), [[-1,-1,2],[-1,0,1]])
   }
 
+  func testS_17() {
+    let s = s_17()
+    
+    XCTAssertEqual(s.letterCombinations("23"), ["ad","ae","af","bd","be","bf","cd","ce","cf"])
+  }
 }
