@@ -5,6 +5,7 @@
 //  Created by sykang on 2023/02/15.
 //
 
+import Foundation
 import XCTest
 @testable import leetcode
 
@@ -44,5 +45,11 @@ final class solutionTests_1: XCTestCase {
     let s = s_17()
     
     XCTAssertEqual(s.letterCombinations("23"), ["ad","ae","af","bd","be","bf","cd","ce","cf"])
+  }
+  
+  func testS_19() {
+    let s = s_19()
+    
+    XCTAssertEqual(s.removeNthFromEnd([1,2,3,4,5,6], 2)?.toArray(), [1,2,3,5,6])
   }
 }
