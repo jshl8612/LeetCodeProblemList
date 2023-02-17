@@ -52,4 +52,10 @@ final class solutionTests_1: XCTestCase {
     
     XCTAssertEqual(s.removeNthFromEnd([1,2,3,4,5,6], 2)?.toArray(), [1,2,3,5,6])
   }
+  
+  func testS_22() {
+    let s = s_22()
+    
+    XCTAssertEqual(s.generateParenthesis(3).count, 5)
+  }
 }

@@ -25,21 +25,15 @@ public class ListNode {
   }
 }
 
-extension Array where Element == Int {
-  public func toListNode() -> ListNode? {
-    guard self.isEmpty == false else { return nil }
+struct s_19 {
+  func removeNthFromEnd(_ nums: [Int], _ n: Int) -> ListNode? {
+    guard nums.isEmpty == false else { return nil }
     var next: ListNode?
-    self.reversed().forEach { num in
+    nums.reversed().forEach { num in
       let node = ListNode(num, next)
       next = node
     }
-    return next
-  }
-}
-
-struct s_19 {
-  func removeNthFromEnd(_ nums: [Int], _ n: Int) -> ListNode? {
-    guard let head = nums.toListNode() else { return nil }
+    guard let head = next else { return nil }
     guard n > 0 else { return head }
     
     var cur: ListNode? = head
