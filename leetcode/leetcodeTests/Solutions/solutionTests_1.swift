@@ -9,6 +9,8 @@ import Foundation
 import XCTest
 @testable import leetcode
 
+//typealias ListNode = leetcodeTests.ListNode
+
 final class solutionTests_1: XCTestCase {
 
   func testS_8() {
@@ -65,5 +67,17 @@ final class solutionTests_1: XCTestCase {
     XCTAssertEqual(s.mergeKLists([[1,4,5],[1,3,4],[2,6]]), [1,1,2,3,4,4,5,6])
     XCTAssertEqual(s.mergeKLists([[]]), [])
     XCTAssertEqual(s.mergeKLists([]), [])
+  }
+  
+  func testS_25() {
+    let s = s_25()
+    
+//    XCTAssertEqual(s.reverse([1,2,3], 3), [3,2,1])
+//    XCTAssertEqual(s.reverse([1,2,3], 2), [2,1,3])
+//    XCTAssertEqual(s.reverse([1,2,3,4,5,6,7], 8), [1,2,3,4,5,6,7])
+    
+    XCTAssertEqual(s.reverseKGroup([1,2,3,4,5,6], 3), [3,2,1,6,5,4])
+    XCTAssertEqual(s.reverseKGroup([1,2,3,4,5,6], 2), [2,1,4,3,6,5])
+    XCTAssertEqual(s.reverseKGroup([1,2,3,4,5,6,7], 3), [3,2,1,6,5,4,7])
   }
 }
