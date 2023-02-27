@@ -14,6 +14,20 @@ public class ListNode {
      public init(_ val: Int) { self.val = val; self.next = nil; }
      public init(_ val: Int, _ next: ListNode?) { self.val = val; self.next = next; }
   
+  init?(_ nums: [Int]) {
+    var next: ListNode?
+    nums.reversed().forEach { num in
+      let node = ListNode(num, next)
+      next = node
+    }
+    if let head = next {
+      self.val = head.val
+      self.next = head.next
+    } else {
+      return nil
+    }
+  }
+  
   func toArray() -> [Int] {
     var result: [Int] = []
     var cur: ListNode? = self

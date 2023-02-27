@@ -58,4 +58,12 @@ final class solutionTests_1: XCTestCase {
     
     XCTAssertEqual(s.generateParenthesis(3).count, 5)
   }
+  
+  func testS_23() {
+    let s = s_23()
+    
+    XCTAssertEqual(s.mergeKLists([[1,4,5],[1,3,4],[2,6]]), [1,1,2,3,4,4,5,6])
+    XCTAssertEqual(s.mergeKLists([[]]), [])
+    XCTAssertEqual(s.mergeKLists([]), [])
+  }
 }

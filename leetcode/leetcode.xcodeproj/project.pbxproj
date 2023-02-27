@@ -29,6 +29,8 @@
 		E56B1DC9299E15E20028FDB2 /* s_19.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B1DC7299E15E20028FDB2 /* s_19.swift */; };
 		E56B1DCC299F27EE0028FDB2 /* s_22.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B1DCB299F27EE0028FDB2 /* s_22.swift */; };
 		E56B1DCD299F27EE0028FDB2 /* s_22.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B1DCB299F27EE0028FDB2 /* s_22.swift */; };
+		E56B1DD329A346270028FDB2 /* s_23.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B1DD229A346270028FDB2 /* s_23.swift */; };
+		E56B1DD429A346270028FDB2 /* s_23.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B1DD229A346270028FDB2 /* s_23.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,7 @@
 		E56B1DC4299E10430028FDB2 /* s_17.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = s_17.swift; sourceTree = "<group>"; };
 		E56B1DC7299E15E20028FDB2 /* s_19.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = s_19.swift; sourceTree = "<group>"; };
 		E56B1DCB299F27EE0028FDB2 /* s_22.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = s_22.swift; sourceTree = "<group>"; };
+		E56B1DD229A346270028FDB2 /* s_23.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = s_23.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +163,7 @@
 				E56B1DC4299E10430028FDB2 /* s_17.swift */,
 				E56B1DC7299E15E20028FDB2 /* s_19.swift */,
 				E56B1DCB299F27EE0028FDB2 /* s_22.swift */,
+				E56B1DD229A346270028FDB2 /* s_23.swift */,
 			);
 			path = Solutions;
 			sourceTree = "<group>";
@@ -303,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E56B1DD329A346270028FDB2 /* s_23.swift in Sources */,
 				E56B1DC2299E09730028FDB2 /* s_15.swift in Sources */,
 				E56B1DCC299F27EE0028FDB2 /* s_22.swift in Sources */,
 				E56B1DC8299E15E20028FDB2 /* s_19.swift in Sources */,
@@ -324,6 +329,7 @@
 				E56B1DCD299F27EE0028FDB2 /* s_22.swift in Sources */,
 				E56B1DC9299E15E20028FDB2 /* s_19.swift in Sources */,
 				E56B1DC6299E10430028FDB2 /* s_17.swift in Sources */,
+				E56B1DD429A346270028FDB2 /* s_23.swift in Sources */,
 				E56B1DC3299E09730028FDB2 /* s_15.swift in Sources */,
 				E56B1DC0299E04F90028FDB2 /* s_12.swift in Sources */,
 				E56B1D5A299C7ED10028FDB2 /* leetcodeTests.swift in Sources */,
