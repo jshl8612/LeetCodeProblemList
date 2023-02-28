@@ -11,6 +11,7 @@
 		E50B030629AC8C82007B5E41 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50B030529AC8C82007B5E41 /* ListNode.swift */; };
 		E50B030829AC91BD007B5E41 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50B030529AC8C82007B5E41 /* ListNode.swift */; };
 		E50B030B29ADC0FB007B5E41 /* s_27.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50B030A29ADC0FB007B5E41 /* s_27.swift */; };
+		E50B030D29ADC5AB007B5E41 /* s_28.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50B030C29ADC5AB007B5E41 /* s_28.swift */; };
 		E56B1D43299C7ED00028FDB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B1D42299C7ED00028FDB2 /* AppDelegate.swift */; };
 		E56B1D45299C7ED00028FDB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B1D44299C7ED00028FDB2 /* SceneDelegate.swift */; };
 		E56B1D47299C7ED00028FDB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B1D46299C7ED00028FDB2 /* ViewController.swift */; };
@@ -59,6 +60,7 @@
 		E50B030429AC8C5E007B5E41 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		E50B030529AC8C82007B5E41 /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
 		E50B030A29ADC0FB007B5E41 /* s_27.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = s_27.swift; sourceTree = "<group>"; };
+		E50B030C29ADC5AB007B5E41 /* s_28.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = s_28.swift; sourceTree = "<group>"; };
 		E56B1D3F299C7ED00028FDB2 /* leetcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = leetcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E56B1D42299C7ED00028FDB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E56B1D44299C7ED00028FDB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				E56B1DD229A346270028FDB2 /* s_23.swift */,
 				E50B02FF29AC5640007B5E41 /* s_25.swift */,
 				E50B030A29ADC0FB007B5E41 /* s_27.swift */,
+				E50B030C29ADC5AB007B5E41 /* s_28.swift */,
 			);
 			path = Solutions;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E50B030B29ADC0FB007B5E41 /* s_27.swift in Sources */,
+				E50B030D29ADC5AB007B5E41 /* s_28.swift in Sources */,
 				E56B1DD329A346270028FDB2 /* s_23.swift in Sources */,
 				E56B1DC2299E09730028FDB2 /* s_15.swift in Sources */,
 				E56B1DCC299F27EE0028FDB2 /* s_22.swift in Sources */,

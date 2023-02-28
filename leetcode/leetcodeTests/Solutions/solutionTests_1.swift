@@ -92,4 +92,10 @@ final class solutionTests_1: XCTestCase {
     XCTAssertEqual(s.removeElement(&arr2, 2), 5)
     XCTAssertEqual(arr2, [0,1,3,0,4])
   }
+  
+  func testS_28() {
+    let s = s_28()
+    
+    XCTAssertEqual(s.strStr2("hello", "ll"), 2)
+  }
 }
