@@ -80,4 +80,16 @@ final class solutionTests_1: XCTestCase {
     XCTAssertEqual(s.reverseKGroup([1,2,3,4,5,6], 2), [2,1,4,3,6,5])
     XCTAssertEqual(s.reverseKGroup([1,2,3,4,5,6,7], 3), [3,2,1,6,5,4,7])
   }
+  
+  func testS_27() {
+    let s = s_27()
+    
+//    var arr1 = [3,2,2,3]
+//    XCTAssertEqual(s.removeElement(&arr1, 3), 2)
+//    XCTAssertEqual(arr1, [2,2])
+    
+    var arr2 = [0,1,2,2,3,0,4,2]
+    XCTAssertEqual(s.removeElement(&arr2, 2), 5)
+    XCTAssertEqual(arr2, [0,1,3,0,4])
+  }
 }
