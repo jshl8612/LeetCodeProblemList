@@ -98,4 +98,10 @@ final class solutionTests_1: XCTestCase {
     
     XCTAssertEqual(s.strStr2("hello", "ll"), 2)
   }
+  
+  func testS_44() {
+    let s = s_44()
+    
+    XCTAssertEqual(s.isMatch("aa", "*"), true)
+  }
 }
