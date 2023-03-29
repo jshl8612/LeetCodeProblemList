@@ -104,4 +104,11 @@ final class solutionTests_1: XCTestCase {
     
     XCTAssertEqual(s.isMatch("aa", "*"), true)
   }
+
+  func testS_64() {
+    let s = s_64()
+    
+    XCTAssertEqual(s.minPathSum([[1,2,3],[4,5,6]]), 12)
+    XCTAssertEqual(s.minPathSum([[1,3,1],[1,5,1],[4,2,1]]), 7)
+  }
 }
