@@ -117,4 +117,13 @@ final class solutionTests_1: XCTestCase {
     
     XCTAssertEqual(s.minDistance("horse", "ros"), 3)
   }
+  
+  func testS_85() {
+    let s = s_85()
+    
+    XCTAssertEqual(s.maximalRectangle([["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]]), 6)
+    
+    XCTAssertEqual(s.maximalRectangle([["0","1"],["1","0"]]), 1)
+//    XCTAssertEqual(s.maximalRectangle([["1","1","1","1","0"],["0","0","0","0","0"],["0","0","1","1","1"]]), 4)
+  }
 }
