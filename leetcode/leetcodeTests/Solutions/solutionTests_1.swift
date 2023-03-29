@@ -111,4 +111,10 @@ final class solutionTests_1: XCTestCase {
     XCTAssertEqual(s.minPathSum([[1,2,3],[4,5,6]]), 12)
     XCTAssertEqual(s.minPathSum([[1,3,1],[1,5,1],[4,2,1]]), 7)
   }
+  
+  func testS_72() {
+    let s = s_72()
+    
+    XCTAssertEqual(s.minDistance("horse", "ros"), 3)
+  }
 }
