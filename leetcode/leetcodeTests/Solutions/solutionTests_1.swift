@@ -126,4 +126,14 @@ final class solutionTests_1: XCTestCase {
     XCTAssertEqual(s.maximalRectangle([["0","1"],["1","0"]]), 1)
 //    XCTAssertEqual(s.maximalRectangle([["1","1","1","1","0"],["0","0","0","0","0"],["0","0","1","1","1"]]), 4)
   }
+  
+  func testS_87() {
+    let s = s_87()
+    
+    XCTAssertEqual(s.isScramble("great", "rgeat"), true)
+    
+    XCTAssertEqual(s.isScramble("abcde", "caebd"), false)
+    
+    XCTAssertEqual(s.isScramble("great", "taerg"), true)
+  }
 }
