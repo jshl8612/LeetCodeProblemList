@@ -136,4 +136,10 @@ final class solutionTests_1: XCTestCase {
     
     XCTAssertEqual(s.isScramble("great", "taerg"), true)
   }
+  
+  func testS_97() {
+    let s = s_97()
+    
+    XCTAssertEqual(s.isInterleave("aab", "aad", "aadaab"), true)
+  }
 }
