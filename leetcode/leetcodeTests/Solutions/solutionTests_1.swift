@@ -142,4 +142,14 @@ final class solutionTests_1: XCTestCase {
     
     XCTAssertEqual(s.isInterleave("aab", "aad", "aadaab"), true)
   }
+  
+  func testS_115() {
+    let s = s_115()
+    
+    XCTAssertEqual(s.numDistinct("rabbbit", "rabbit"), 3)
+    
+    XCTAssertEqual(s.numDistinct("babgbag", "bag"), 5)
+    
+    XCTAssertEqual(s.numDistinct("adbdadeecadeadeccaeaabdabdbcdabddddabcaaadbabaaedeeddeaeebcdeabcaaaeeaeeabcddcebddebeebedaecccbdcbcedbdaeaedcdebeecdaaedaacadbdccabddaddacdddc", "bcddceeeebecbc"), 700531452)
+  }
 }
