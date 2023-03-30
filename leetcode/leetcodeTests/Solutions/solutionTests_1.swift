@@ -160,4 +160,11 @@ final class solutionTests_1: XCTestCase {
     
     XCTAssertEqual(s.generate(1), [[1]])
   }
+  
+  func testS_120() {
+    let s = s_120()
+    
+//    XCTAssertEqual(s.minimumTotal([[-10]]), -10)
+    XCTAssertEqual(s.minimumTotal([[2],[3,4],[6,5,7],[4,1,8,3]]), 11)
+  }
 }
