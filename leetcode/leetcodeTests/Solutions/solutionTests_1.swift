@@ -152,4 +152,12 @@ final class solutionTests_1: XCTestCase {
     
     XCTAssertEqual(s.numDistinct("adbdadeecadeadeccaeaabdabdbcdabddddabcaaadbabaaedeeddeaeebcdeabcaaaeeaeeabcddcebddebeebedaecccbdcbcedbdaeaedcdebeecdaaedaacadbdccabddaddacdddc", "bcddceeeebecbc"), 700531452)
   }
+  
+  func testS_118() {
+    let s = s_118()
+    
+    XCTAssertEqual(s.generate(5), [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]])
+    
+    XCTAssertEqual(s.generate(1), [[1]])
+  }
 }
