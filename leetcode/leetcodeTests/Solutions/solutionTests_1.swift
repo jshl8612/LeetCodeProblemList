@@ -167,4 +167,11 @@ final class solutionTests_1: XCTestCase {
 //    XCTAssertEqual(s.minimumTotal([[-10]]), -10)
     XCTAssertEqual(s.minimumTotal([[2],[3,4],[6,5,7],[4,1,8,3]]), 11)
   }
+  
+  func testS_121() {
+    let s = s_121()
+    
+    XCTAssertEqual(s.maxProfit3([3,3,5,0,0,3,1,4]), 6)
+    XCTAssertEqual(s.maxProfit3([1,2,4,2,5,7,2,4,9,0]), 13)
+  }
 }
