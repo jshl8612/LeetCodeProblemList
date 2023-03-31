@@ -180,4 +180,14 @@ final class solutionTests_1: XCTestCase {
     
     
   }
+  
+  func testS_131() {
+    let s = s_131()
+    
+//    XCTAssertEqual(s.partition("aab"), [["a","a","b"],["aa","b"]])
+//    XCTAssertEqual(s.partition("cdd"), [["c","d","d"],["c","dd"]])
+    
+//    XCTAssertEqual(s.minCut("aab"), 1)
+    XCTAssertEqual(s.minCut("cdd"), 1)
+  }
 }
