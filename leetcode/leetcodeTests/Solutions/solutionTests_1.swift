@@ -174,4 +174,10 @@ final class solutionTests_1: XCTestCase {
     XCTAssertEqual(s.maxProfit3([3,3,5,0,0,3,1,4]), 6)
     XCTAssertEqual(s.maxProfit3([1,2,4,2,5,7,2,4,9,0]), 13)
   }
+  
+  func testS_124() {
+    let s = s_124()
+    
+    
+  }
 }
