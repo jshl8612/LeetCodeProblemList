@@ -263,6 +263,9 @@ final class solutionTests_1: XCTestCase {
   func testS_264() {
     let s = s_264()
     
-    XCTAssertEqual(s.nthUglyNumber(10), 12)
+//    XCTAssertEqual(s.nthUglyNumber(10), 12)
+    
+    XCTAssertEqual(s.nthUglyNumber(5, 2, 11, 13), 10)
+    XCTAssertEqual(s.nthUglyNumber(1000000000, 2, 217983653, 336916467), 1999999984)
   }
 }

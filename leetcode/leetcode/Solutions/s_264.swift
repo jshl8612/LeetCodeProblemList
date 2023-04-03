@@ -72,4 +72,36 @@ class s_264 {
     
     return dp[n-1]
   }
+  
+  func nthUglyNumber(_ n: Int, _ a: Int, _ b: Int, _ c: Int) -> Int {
+    var l = 1, r = Int.max
+    while l < r {
+      let mid = l + (r-l)/2
+      let index = indexOfUglyNum(mid, a, b, c)
+      if index < n {
+        l = mid + 1
+      } else {
+        r = mid
+      }
+    }
+  
+    return l
+  }
+  
+  private func indexOfUglyNum(_ n: Int, _ a: Int, _ b: Int, _ c: Int) -> Int {
+    return n/a + n/b + n/c - n/lcm(a, b) - n/lcm(b, c) - n/lcm(a, c) + n/lcm(a, lcm(b, c))
+  }
+  
+  private func lcm(_ a: Int, _ b: Int) -> Int {
+    let gcd = gcd(a, b)
+    return (a/gcd)*b
+  }
+  
+  private func gcd(_ a: Int, _ b: Int) -> Int {
+    if b == 0 { return a }
+    if a/b == 0 {
+      return gcd(b, a)
+    }
+    return gcd(a%b, b)
+  }
 }
