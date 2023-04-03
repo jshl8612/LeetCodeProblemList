@@ -233,4 +233,15 @@ final class solutionTests_1: XCTestCase {
     
     XCTAssertEqual(s.calculateMinimumHP([[1,-4,5,-99],[2,-2,-2,-1]]), 3)
   }
+  
+  func testS_198() {
+    let s = s_198()
+    
+    XCTAssertEqual(s.rob([1,2,3,1]), 4)
+    XCTAssertEqual(s.rob([2,7,9,3,1]), 12)
+    
+    XCTAssertEqual(s.rob2([2,3,2]), 3)
+    XCTAssertEqual(s.rob2([1,2,3,1]), 4)
+    XCTAssertEqual(s.rob2([1,2,3]), 3)
+  }
 }
