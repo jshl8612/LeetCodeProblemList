@@ -252,4 +252,11 @@ final class solutionTests_1: XCTestCase {
     XCTAssertEqual(s.maximalSquare([["0","1"],["1","0"]]), 1)
     XCTAssertEqual(s.maximalSquare([["0"]]), 0)
   }
+  
+  func testS_241() {
+    let s = s_241()
+    
+    XCTAssertEqual(s.diffWaysToCompute("2-1-1"), [0, 2])
+    XCTAssertEqual(s.diffWaysToCompute("2*3-4*5"), [-34,-14,-10,-10,10])
+  }
 }
