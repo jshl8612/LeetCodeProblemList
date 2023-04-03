@@ -223,4 +223,14 @@ final class solutionTests_1: XCTestCase {
     
     XCTAssertEqual(s.maxProduct1(tc1), 1492992000)
   }
+  
+  func testS_174() {
+    let s = s_174()
+    
+    XCTAssertEqual(s.calculateMinimumHP([[-2,-3,3],[-5,-10,1],[10,30,-5]]), 7)
+
+    XCTAssertEqual(s.calculateMinimumHP([[1,-2,3],[2,-2,-2]]), 2)
+    
+    XCTAssertEqual(s.calculateMinimumHP([[1,-4,5,-99],[2,-2,-2,-1]]), 3)
+  }
 }
