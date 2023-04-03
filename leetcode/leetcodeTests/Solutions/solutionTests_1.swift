@@ -244,4 +244,12 @@ final class solutionTests_1: XCTestCase {
     XCTAssertEqual(s.rob2([1,2,3,1]), 4)
     XCTAssertEqual(s.rob2([1,2,3]), 3)
   }
+  
+  func testS_221() {
+    let s = s_221()
+    
+    XCTAssertEqual(s.maximalSquare([["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]]), 4)
+    XCTAssertEqual(s.maximalSquare([["0","1"],["1","0"]]), 1)
+    XCTAssertEqual(s.maximalSquare([["0"]]), 0)
+  }
 }
