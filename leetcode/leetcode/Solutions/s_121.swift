@@ -52,4 +52,22 @@ struct s_121 {
     
     return sell2
   }
+  
+  func maxProfit4(_ k: Int, _ prices: [Int]) -> Int {
+    var buyDp = Array(repeating: Int.max, count: k)
+    var sellDp = Array(repeating: 0, count: k)
+    
+    for price in prices {
+      for j in 0..<k {
+        if j == 0 {
+          buyDp[j] = min(buyDp[j], price)
+        } else {
+          buyDp[j] = min(buyDp[j], price - sellDp[j-1])
+        }
+        sellDp[j] = max(sellDp[j], price - buyDp[j])
+      }
+    }
+    
+    return sellDp[k-1]
+  }
 }
