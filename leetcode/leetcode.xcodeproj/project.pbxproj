@@ -65,6 +65,8 @@
 		E556F8F229DBEF54007E6CBB /* s_32.swift in Sources */ = {isa = PBXBuildFile; fileRef = E556F8F029DBEF54007E6CBB /* s_32.swift */; };
 		E556F8F429DBF869007E6CBB /* s_40.swift in Sources */ = {isa = PBXBuildFile; fileRef = E556F8F329DBF869007E6CBB /* s_40.swift */; };
 		E556F8F529DBF869007E6CBB /* s_40.swift in Sources */ = {isa = PBXBuildFile; fileRef = E556F8F329DBF869007E6CBB /* s_40.swift */; };
+		E556F8F729DC04ED007E6CBB /* s_41.swift in Sources */ = {isa = PBXBuildFile; fileRef = E556F8F629DC04ED007E6CBB /* s_41.swift */; };
+		E556F8F829DC04ED007E6CBB /* s_41.swift in Sources */ = {isa = PBXBuildFile; fileRef = E556F8F629DC04ED007E6CBB /* s_41.swift */; };
 		E56B1D43299C7ED00028FDB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B1D42299C7ED00028FDB2 /* AppDelegate.swift */; };
 		E56B1D45299C7ED00028FDB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B1D44299C7ED00028FDB2 /* SceneDelegate.swift */; };
 		E56B1D47299C7ED00028FDB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B1D46299C7ED00028FDB2 /* ViewController.swift */; };
@@ -141,6 +143,7 @@
 		E556F8ED29DBE1BF007E6CBB /* AlgorithmsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmsTests.swift; sourceTree = "<group>"; };
 		E556F8F029DBEF54007E6CBB /* s_32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = s_32.swift; sourceTree = "<group>"; };
 		E556F8F329DBF869007E6CBB /* s_40.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = s_40.swift; sourceTree = "<group>"; };
+		E556F8F629DC04ED007E6CBB /* s_41.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = s_41.swift; sourceTree = "<group>"; };
 		E56B1D3F299C7ED00028FDB2 /* leetcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = leetcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E56B1D42299C7ED00028FDB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E56B1D44299C7ED00028FDB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -196,6 +199,7 @@
 				E556F8E929DBCBAD007E6CBB /* s_36.swift */,
 				E556F8F029DBEF54007E6CBB /* s_32.swift */,
 				E556F8F329DBF869007E6CBB /* s_40.swift */,
+				E556F8F629DC04ED007E6CBB /* s_41.swift */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -461,6 +465,7 @@
 				E556F89D29D3DBFA007E6CBB /* s_64.swift in Sources */,
 				E56B1D79299C9ECA0028FDB2 /* s_10.swift in Sources */,
 				E556F8A729D4851D007E6CBB /* s_87.swift in Sources */,
+				E556F8F729DC04ED007E6CBB /* s_41.swift in Sources */,
 				E556F8CC29DA652D007E6CBB /* s_174.swift in Sources */,
 				E556F8D229DA9EA5007E6CBB /* s_221.swift in Sources */,
 				E56B1D43299C7ED00028FDB2 /* AppDelegate.swift in Sources */,
@@ -513,6 +518,7 @@
 				E56B1DC6299E10430028FDB2 /* s_17.swift in Sources */,
 				E556F8CD29DA652D007E6CBB /* s_174.swift in Sources */,
 				E556F8F529DBF869007E6CBB /* s_40.swift in Sources */,
+				E556F8F829DC04ED007E6CBB /* s_41.swift in Sources */,
 				E556F8E429DBAFB5007E6CBB /* s_300.swift in Sources */,
 				E56B1DD429A346270028FDB2 /* s_23.swift in Sources */,
 				E556F8F229DBEF54007E6CBB /* s_32.swift in Sources */,
