@@ -268,4 +268,12 @@ final class solutionTests_1: XCTestCase {
     XCTAssertEqual(s.nthUglyNumber(5, 2, 11, 13), 10)
     XCTAssertEqual(s.nthUglyNumber(1000000000, 2, 217983653, 336916467), 1999999984)
   }
+  
+  func testS_300() {
+    let s = s_300()
+    
+    XCTAssertEqual(s.lengthOfLIS([7,7,7,7,7]), 1)
+    XCTAssertEqual(s.lengthOfLIS([0,1,0,3,2,3]), 4)
+    XCTAssertEqual(s.lengthOfLIS([10,9,2,5,3,7,101,18]), 4)
+  }
 }
