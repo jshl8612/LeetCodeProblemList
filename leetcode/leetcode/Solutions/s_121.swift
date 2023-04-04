@@ -70,4 +70,29 @@ struct s_121 {
     
     return sellDp[k-1]
   }
+  
+  
+  func maxProfit5(_ prices: [Int]) -> Int {
+    let cnt = prices.count
+    guard cnt > 1 else { return 0 }
+    
+    var value = 0
+    var dp = [Int](repeating: 0, count: cnt)
+    
+    for i in 1..<prices.count {
+      for k in (0..<i).reversed() {
+        if k >= 2 {
+          dp[i] = max(dp[i], prices[i] - prices[k] + dp[k-2])
+        } else {
+          dp[i] = max(dp[i], prices[i] - prices[k])
+        }
+      }
+      dp[i] = max(dp[i], dp[i - 1])
+      value = max(value, dp[i])
+    }
+    
+    print(dp)
+    
+    return value
+  }
 }
