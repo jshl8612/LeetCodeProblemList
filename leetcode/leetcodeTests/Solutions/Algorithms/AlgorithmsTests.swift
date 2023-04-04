@@ -21,5 +21,23 @@ final class AlgorithmsTests: XCTestCase {
     
     print(board)
   }
+ 
+  func testS_32() {
+    let s = s_32()
+    
+//    XCTAssertEqual(s.longestValidParentheses("()"), 2)
+//    
+//    XCTAssertEqual(s.longestValidParentheses("()(())"), 6)
+    XCTAssertEqual(s.longestValidParentheses("(()))())("), 4)
+  }
   
+  func testS_40() {
+    let s = s_40()
+    
+    XCTAssertEqual(s.combinationSum2([10,1,2,7,6,1,5], 8), [[1,1,6],[1,2,5],[1,7],[2,6]])
+    
+    let arr = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+    
+    XCTAssertEqual(s.combinationSum2(arr, 30), [])
+  }
 }
