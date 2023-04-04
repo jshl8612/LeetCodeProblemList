@@ -104,4 +104,27 @@ class s_264 {
     }
     return gcd(a%b, b)
   }
+  
+  
+  func nthSuperUglyNumber(_ n: Int, _ primes: [Int]) -> Int {
+          var dp = Array(repeating: 1, count: n)
+          var indexDp = Array(repeating: 0, count: primes.count)
+
+          for i in 1..<n {
+              var minValue = Int.max
+              for j in 0..<primes.count {
+                  minValue = min(minValue, dp[indexDp[j]] * primes[j])
+              }
+
+              dp[i] = minValue
+
+              for j in 0..<primes.count {
+                  if minValue == dp[indexDp[j]] * primes[j] {
+                      indexDp[j] += 1
+                  }
+              }
+          }
+
+          return dp[n-1]
+      }
 }
