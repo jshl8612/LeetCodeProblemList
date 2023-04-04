@@ -40,4 +40,15 @@ final class AlgorithmsTests: XCTestCase {
     
     XCTAssertEqual(s.combinationSum2(arr, 30), [])
   }
+  
+  func testS_47() {
+    let s = s_47()
+    
+    XCTAssertEqual(s.permuteUnique( [1,1,2]), [[1,1,2],
+                                               [1,2,1],
+                                               [2,1,1]])
+    
+    let arr = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+    XCTAssertEqual(s.permuteUnique(arr), [])
+  }
 }
