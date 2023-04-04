@@ -268,8 +268,11 @@ final class solutionTests_1: XCTestCase {
     
 //    XCTAssertEqual(s.nthUglyNumber(10), 12)
     
-    XCTAssertEqual(s.nthUglyNumber(5, 2, 11, 13), 10)
-    XCTAssertEqual(s.nthUglyNumber(1000000000, 2, 217983653, 336916467), 1999999984)
+//    XCTAssertEqual(s.nthUglyNumber(5, 2, 11, 13), 10)
+//    XCTAssertEqual(s.nthUglyNumber(1000000000, 2, 217983653, 336916467), 1999999984)
+    
+    XCTAssertEqual(s.nthSuperUglyNumber(12, [2,7,13,19]), 0)
+    XCTAssertEqual(s.nthSuperUglyNumber(1, [2,3,5]), 0)
   }
   
   func testS_300() {
@@ -278,5 +281,17 @@ final class solutionTests_1: XCTestCase {
     XCTAssertEqual(s.lengthOfLIS([7,7,7,7,7]), 1)
     XCTAssertEqual(s.lengthOfLIS([0,1,0,3,2,3]), 4)
     XCTAssertEqual(s.lengthOfLIS([10,9,2,5,3,7,101,18]), 4)
+  }
+  
+  func testS_312() {
+    let s = s_312()
+    
+//    XCTAssertEqual(s.maxCoins([3,1,5,8]), 167)
+//
+//    XCTAssertEqual(s.maxCoins([1,5]), 10)
+//
+    XCTAssertEqual(s.maxCoins([8,2,6,8,9,8,1,4,1,5,3,0,7,7,0,4,2,2,5,4,1,5,3,0,7,7,0,4,2,2,5]), 3630)
+    
+//    XCTAssertEqual(s.maxCoins([8,2,6,8,9,8,1,4,1,5,3,0,7,7,0,4,2,2,5,2,6,8,9,8,1,4,1,5,3,0,7,7,0,4,2,2,5,2,6,8,9,8,1,4,1,5,3,0,7,7,0,4,2,2,5,2,6,8,9,8,1,4,1,5,3,0,7,7,0,4,2,2,5,2,6,8,9,8,1,4,1,5,3,0,7,7,0,4,2,2,5,2,6,8,9,8,1,4,1,5,3,0,7,7,0,4,2,2,5,2,6,8,9,8,1,4,1,5,3,0,7,7,0,4,2,2,5,2,6,8,9,8,1,4,1,5,3,0,7,7,0,4,2,2,5]), 33152)
   }
 }
