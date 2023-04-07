@@ -8,6 +8,37 @@
 import Foundation
 
 struct s_47 {
+  
+  //s_46
+  func permute(_ nums: [Int]) -> [[Int]] {
+    var visited: [Int: Bool] = [:]
+    var path: [Int] = []
+    var result: [[Int]] = []
+    
+    func dfs() {
+      if path.count == nums.count {
+        result.append(path)
+        return
+      }
+      
+      for i in 0..<nums.count {
+        if visited[i] == true {
+          continue
+        }
+        
+        path.append(nums[i])
+        visited[i] = true
+        dfs()
+        path.removeLast()
+        visited[i] = false
+      }
+    }
+    
+    dfs()
+    
+    return result
+  }
+  
   func permuteUnique(_ nums: [Int]) -> [[Int]] {
     var result = Set<[Int]>()
     var path = [Int]()
