@@ -50,7 +50,7 @@ final class AlgorithmsTests: XCTestCase {
 //    XCTAssertEqual(s.permuteUnique( [1,1,2]), [[1,1,2],
 //                                               [1,2,1],
 //                                               [2,1,1]])
-//    
+//
 //    let arr = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 //    XCTAssertEqual(s.permuteUnique(arr), [])
   }
@@ -70,5 +70,17 @@ final class AlgorithmsTests: XCTestCase {
     let s = s_50()
     
     XCTAssertEqual(s.myPow(2.0, -2147483648), 0)
+  }
+  
+  func testS_58() {
+    let s = s_58()
+    
+    XCTAssertEqual(s.lengthOfLastWord("Hello World"), 5)
+    
+    XCTAssertEqual(s.lengthOfLastWord("   fly me   to   the moon  "), 4)
+    
+    XCTAssertEqual(s.lengthOfLastWord("luffy is still joyboy!!"), 6)
+    
+    XCTAssertEqual(s.lengthOfLastWord("aaa"), 3)
   }
 }
