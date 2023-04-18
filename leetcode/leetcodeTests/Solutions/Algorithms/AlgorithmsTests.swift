@@ -72,6 +72,12 @@ final class AlgorithmsTests: XCTestCase {
     XCTAssertEqual(s.myPow(2.0, -2147483648), 0)
   }
   
+  func testS_54() {
+    let s = s_54()
+    
+    XCTAssertEqual(s.spiralOrder([[1,2,3],[4,5,6],[7,8,9]]), [1,2,3,6,9,8,7,4,5])
+  }
+  
   func testS_58() {
     let s = s_58()
     
